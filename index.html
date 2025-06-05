@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__logo-div">
+            <h2 class="heaedr__logo">Weather</h2>
+          </div>
+
+          <div class="header__search">
+            <input
+              placeholder="Enter city name"
+              type="text"
+              class="header__search-input"
+            />
+            <button class="header__search-btn">
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 24 24"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.25 2a8.25 8.25 0 0 1 6.34 13.53l5.69 5.69a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215l-5.69-5.69A8.25 8.25 0 1 1 10.25 2ZM3.5 10.25a6.75 6.75 0 1 0 13.5 0 6.75 6.75 0 0 0-13.5 0Z"
+                ></path>
+              </svg>
+              Search
+            </button>
+            <button class="header__location">
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 24 24"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="12" cy="12" r="4"></circle>
+                <path
+                  d="M13 4.069V2h-2v2.069A8.01 8.01 0 0 0 4.069 11H2v2h2.069A8.008 8.008 0 0 0 11 19.931V22h2v-2.069A8.007 8.007 0 0 0 19.931 13H22v-2h-2.069A8.008 8.008 0 0 0 13 4.069zM12 18c-3.309 0-6-2.691-6-6s2.691-6 6-6 6 2.691 6 6-2.691 6-6 6z"
+                ></path>
+              </svg>
+              Current Location
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="sidebar">
+        <div class="container">
+          <div class="sidebar__inner">
+            <div class="sidebar__inner-left">
+              <div class="sidebar-top__inner">
+                <h3 class="sidebar-top__inner-heading">Now</h3>
+                <div class="sidebar-top__inner-content">
+                  <h2 class="sidebar-top__inner-content-title">35.8°C</h2>
+                  <img
+                    class="sidebar-top__inner-content-img"
+                    src="https://openweathermap.org/img/wn/04d@2x.png"
+                  />
+                </div>
+                <div class="sidebar-top__inner-main">
+                  <p class="sidebar-top__inner-main-text">broken clouds</p>
+                </div>
+                <div class="sidebar-top__inner-location">
+                  <ul class="sidebar-top__inner-location-list">
+                    <li class="sidebar-top__inner-item">
+                      <svg
+                        stroke="currentColor"
+                        fill="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 512 512"
+                        class="sidebar-top__inner-item-img"
+                        height="1em"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          width="416"
+                          height="384"
+                          x="48"
+                          y="80"
+                          fill="none"
+                          stroke-linejoin="round"
+                          stroke-width="32"
+                          rx="48"
+                        ></rect>
+                        <path
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="32"
+                          d="M128 48v32m256-32v32m80 80H48"
+                        ></path>
+                      </svg>
+                      <p class="sidebar-top__inner-item-text">
+                        Thursday, 5,Jun 2025
+                      </p>
+                    </li>
+                    <li class="sidebar-top__inner-item">
+                      <svg
+                        stroke="currentColor"
+                        fill="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 24 24"
+                        class="sidebar-top__inner-item-img"
+                        height="1em"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g id="Location_On">
+                          <g>
+                            <path
+                              d="M12,21.933a1.715,1.715,0,0,1-1.384-.691L5.555,14.5a7.894,7.894,0,1,1,12.885-.009L13.385,21.24A1.717,1.717,0,0,1,12,21.933ZM11.992,3.066A6.81,6.81,0,0,0,7.414,4.815a6.891,6.891,0,0,0-1.05,9.1l5.051,6.727a.725.725,0,0,0,.584.292h0a.732.732,0,0,0,.586-.292l5.044-6.734A6.874,6.874,0,0,0,12.81,3.113,7.277,7.277,0,0,0,11.992,3.066Z"
+                            ></path>
+                            <path
+                              d="M12,12.5A2.5,2.5,0,1,1,14.5,10,2.5,2.5,0,0,1,12,12.5Zm0-4A1.5,1.5,0,1,0,13.5,10,1.5,1.5,0,0,0,12,8.5Z"
+                            ></path>
+                          </g>
+                        </g>
+                      </svg>
+                      <p
+                        class="sidebar-top__inner-item-text sidebar-top__inner-item-text1"
+                      >
+                        Tashkent, UZ
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="sidebar-bottom__inner">
+                <h2 class="sidebar-bottom__inner-heading">5 Days Forecast</h2>
+                <ul class="sidebar-bottom__inner-list">
+                  <li class="sidebar-bottom__inner-item">
+                    <img
+                      class="sidebar-bottom__inner-item-img"
+                      src="https://openweathermap.org/img/wn/04d@2x.png"
+                    />
+                    <h3 class="sidebar-bottom__inner-item-heading">32.44°C</h3>
+                    <p class="sidebar-bottom__inner-item-text">6 Jun</p>
+                    <p class="sidebar-bottom__inner-item-text">Frid</p>
+                  </li>
+                  <li class="sidebar-bottom__inner-item">
+                    <img
+                      class="sidebar-bottom__inner-item-img"
+                      src="https://openweathermap.org/img/wn/04d@2x.png"
+                    />
+                    <h3 class="sidebar-bottom__inner-item-heading">29.22°C</h3>
+                    <p class="sidebar-bottom__inner-item-text">7 Jun</p>
+                    <p class="sidebar-bottom__inner-item-text">Satu</p>
+                  </li>
+                  <li class="sidebar-bottom__inner-item">
+                    <img
+                      class="sidebar-bottom__inner-item-img"
+                      src="https://openweathermap.org/img/wn/01d@2x.png"
+                    />
+                    <h3 class="sidebar-bottom__inner-item-heading">36.94°C</h3>
+                    <p class="sidebar-bottom__inner-item-text">8 Jun</p>
+                    <p class="sidebar-bottom__inner-item-text">Sund</p>
+                  </li>
+                  <li class="sidebar-bottom__inner-item">
+                    <img
+                      class="sidebar-bottom__inner-item-img"
+                      src="https://openweathermap.org/img/wn/04d@2x.png"
+                    />
+                    <h3 class="sidebar-bottom__inner-item-heading">37.28°C</h3>
+                    <p class="sidebar-bottom__inner-item-text">9 Jun</p>
+                    <p class="sidebar-bottom__inner-item-text">Mond</p>
+                  </li>
+                  <li class="sidebar-bottom__inner-item">
+                    <img
+                      class="sidebar-bottom__inner-item-img"
+                      src="https://openweathermap.org/img/wn/02d@2x.png"
+                    />
+                    <h3 class="sidebar-bottom__inner-item-heading">37.54°C</h3>
+                    <p class="sidebar-bottom__inner-item-text">10 Jun</p>
+                    <p class="sidebar-bottom__inner-item-text">Tues</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="sidebar__inner-right">
+              <div class="sidebar__inner-right-top">
+                <h2 class="sidebar__inner-right-top-heading">
+                  Today's Highlights
+                </h2>
+
+                <div class="sidebar__inner-right-top-inner">
+                  <div class="sidebar__inner-right-top-quality">
+                    <div class="sidebar__inner-right-top-index">
+                      <h3 class="sidebar__inner-right-top-index-text">
+                        Air Quality Index
+                      </h3>
+                      <span class="sidebar__inner-right-top-index-btn mode"
+                        >Moderate</span
+                      >
+                    </div>
+                    <div class="sidebar__inner-right-top-air">
+                      <ul class="sidebar__inner-right-top-air-list">
+                        <li class="sidebar__inner-right-top-air-item">
+                          <svg
+                            stroke="currentColor"
+                            fill="currentColor"
+                            stroke-width="0"
+                            viewBox="0 0 512 512"
+                            class="sidebar__inner-right-top-air-img"
+                            height="1em"
+                            width="1em"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M156.7 256H16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h142.2c15.9 0 30.8 10.9 33.4 26.6 3.3 20-12.1 37.4-31.6 37.4-14.1 0-26.1-9.2-30.4-21.9-2.1-6.3-8.6-10.1-15.2-10.1H81.6c-9.8 0-17.7 8.8-15.9 18.4 8.6 44.1 47.6 77.6 94.2 77.6 57.1 0 102.7-50.1 95.2-108.6C249 291 205.4 256 156.7 256zM16 224h336c59.7 0 106.8-54.8 93.8-116.7-7.6-36.2-36.9-65.5-73.1-73.1-55.4-11.6-105.1 24.9-114.9 75.5-1.9 9.6 6.1 18.3 15.8 18.3h32.8c6.7 0 13.1-3.8 15.2-10.1C325.9 105.2 337.9 96 352 96c19.4 0 34.9 17.4 31.6 37.4-2.6 15.7-17.4 26.6-33.4 26.6H16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16zm384 32H243.7c19.3 16.6 33.2 38.8 39.8 64H400c26.5 0 48 21.5 48 48s-21.5 48-48 48c-17.9 0-33.3-9.9-41.6-24.4-2.9-5-8.7-7.6-14.5-7.6h-33.8c-10.9 0-19 10.8-15.3 21.1 17.8 50.6 70.5 84.8 129.4 72.3 41.2-8.7 75.1-41.6 84.7-82.7C526 321.5 470.5 256 400 256z"
+                            ></path>
+                          </svg>
+                        </li>
+                        <li class="sidebar__inner-right-top-air-item">
+                          <p class="sidebar__inner-right-top-air-item-text">
+                            PM2.5
+                          </p>
+                          <h3 class="sidebar__inner-right-top-air-item-heading">
+                            5.2
+                          </h3>
+                        </li>
+                        <li class="sidebar__inner-right-top-air-item">
+                          <p class="sidebar__inner-right-top-air-item-text">
+                            PM10
+                          </p>
+                          <h3 class="sidebar__inner-right-top-air-item-heading">
+                            12
+                          </h3>
+                        </li>
+                        <li class="sidebar__inner-right-top-air-item">
+                          <p class="sidebar__inner-right-top-air-item-text">
+                            SO2
+                          </p>
+                          <h3 class="sidebar__inner-right-top-air-item-heading">
+                            0.47
+                          </h3>
+                        </li>
+                        <li class="sidebar__inner-right-top-air-item">
+                          <p class="sidebar__inner-right-top-air-item-text">
+                            CO
+                          </p>
+                          <h3 class="sidebar__inner-right-top-air-item-heading">
+                            90.63
+                          </h3>
+                        </li>
+                        <li class="sidebar__inner-right-top-air-item">
+                          <p class="sidebar__inner-right-top-air-item-text">
+                            NO
+                          </p>
+                          <h3 class="sidebar__inner-right-top-air-item-heading">
+                            0
+                          </h3>
+                        </li>
+                        <li class="sidebar__inner-right-top-air-item">
+                          <p class="sidebar__inner-right-top-air-item-text">
+                            NO2
+                          </p>
+                          <h3 class="sidebar__inner-right-top-air-item-heading">
+                            0.88
+                          </h3>
+                        </li>
+                        <li class="sidebar__inner-right-top-air-item">
+                          <p class="sidebar__inner-right-top-air-item-text">
+                            NH3
+                          </p>
+                          <h3 class="sidebar__inner-right-top-air-item-heading">
+                            2.13
+                          </h3>
+                        </li>
+                        <li class="sidebar__inner-right-top-air-item">
+                          <p class="sidebar__inner-right-top-air-item-text">
+                            O3
+                          </p>
+                          <h3 class="sidebar__inner-right-top-air-item-heading">
+                            118.36
+                          </h3>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="sidebar__inner-right-top-sun-div">
+                    <div class="sidebar__inner-right-top-sun">
+                      <h2 class="sidebar__inner-right-top-sun-heading">
+                        Sunrise & Sunset
+                      </h2>
+                      <ul class="sidebar__inner-right-top-sun-list">
+                        <li class="sidebar__inner-right-top-sun-item">
+                          <svg
+                            stroke="currentColor"
+                            fill="none"
+                            stroke-width="2"
+                            viewBox="0 0 24 24"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="sidebar__inner-right-top-sun-item-img"
+                            height="1em"
+                            width="1em"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path d="M17 18a5 5 0 0 0-10 0"></path>
+                            <line x1="12" y1="2" x2="12" y2="9"></line>
+                            <line
+                              x1="4.22"
+                              y1="10.22"
+                              x2="5.64"
+                              y2="11.64"
+                            ></line>
+                            <line x1="1" y1="18" x2="3" y2="18"></line>
+                            <line x1="21" y1="18" x2="23" y2="18"></line>
+                            <line
+                              x1="18.36"
+                              y1="11.64"
+                              x2="19.78"
+                              y2="10.22"
+                            ></line>
+                            <line x1="23" y1="22" x2="1" y2="22"></line>
+                            <polyline points="8 6 12 2 16 6"></polyline>
+                          </svg>
+                          <div class="sidebar__inner-right-top-sun-item-box">
+                            <p
+                              class="sidebar__inner-right-top-sun-item-sun-box-text"
+                            >
+                              Sunrise
+                            </p>
+                            <h3
+                              class="sidebar__inner-right-top-sun-item-sun-box-heading"
+                            >
+                              04:51 AM
+                            </h3>
+                          </div>
+                        </li>
+                        <li class="sidebar__inner-right-top-sun-item">
+                          <svg
+                            stroke="currentColor"
+                            fill="none"
+                            stroke-width="2"
+                            viewBox="0 0 24 24"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="sidebar__inner-right-top-sun-item-img"
+                            height="1em"
+                            width="1em"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path d="M17 18a5 5 0 0 0-10 0"></path>
+                            <line x1="12" y1="9" x2="12" y2="2"></line>
+                            <line
+                              x1="4.22"
+                              y1="10.22"
+                              x2="5.64"
+                              y2="11.64"
+                            ></line>
+                            <line x1="1" y1="18" x2="3" y2="18"></line>
+                            <line x1="21" y1="18" x2="23" y2="18"></line>
+                            <line
+                              x1="18.36"
+                              y1="11.64"
+                              x2="19.78"
+                              y2="10.22"
+                            ></line>
+                            <line x1="23" y1="22" x2="1" y2="22"></line>
+                            <polyline points="16 5 12 9 8 5"></polyline>
+                          </svg>
+                          <div class="sidebar__inner-right-top-sun-item-box">
+                            <p
+                              class="sidebar__inner-right-top-sun-item-sun-box-text"
+                            >
+                              Sunset
+                            </p>
+                            <h3
+                              class="sidebar__inner-right-top-sun-item-sun-box-heading"
+                            >
+                              07:52 PM
+                            </h3>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="sidebar__inner-right-top-main">
+                  <ul class="sidebar__inner-right-top-main-list">
+                    <li class="sidebar__inner-right-top-main-item">
+                      <h3 class="sidebar__inner-right-top-main-item-heading">
+                        Humidity
+                      </h3>
+                      <div class="sidebar__inner-right-top-main-item-box">
+                        <svg
+                          stroke="currentColor"
+                          fill="currentColor"
+                          stroke-width="0"
+                          viewBox="0 0 24 24"
+                          class="sidebar__inner-right-top-main-item-box-img"
+                          height="1em"
+                          width="1em"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path fill="none" d="M0 0h24v24H0z"></path>
+                          <path
+                            d="M12 2c-5.33 4.55-8 8.48-8 11.8 0 4.98 3.8 8.2 8 8.2s8-3.22 8-8.2c0-3.32-2.67-7.25-8-11.8zm0 18c-3.35 0-6-2.57-6-6.2 0-2.34 1.95-5.44 6-9.14 4.05 3.7 6 6.79 6 9.14 0 3.63-2.65 6.2-6 6.2zm-4.17-6c.37 0 .67.26.74.62.41 2.22 2.28 2.98 3.64 2.87.43-.02.79.32.79.75 0 .4-.32.73-.72.75-2.13.13-4.62-1.09-5.19-4.12a.75.75 0 0 1 .74-.87z"
+                          ></path>
+                        </svg>
+                        <h2
+                          class="sidebar__inner-right-top-main-item-box-title sidebar__inner-right-top-main-item-box-title1"
+                        >
+                          11%
+                        </h2>
+                      </div>
+                    </li>
+                    <li class="sidebar__inner-right-top-main-item">
+                      <h3 class="sidebar__inner-right-top-main-item-heading">
+                        Pressure
+                      </h3>
+                      <div class="sidebar__inner-right-top-main-item-box">
+                        <svg
+                          stroke="currentColor"
+                          fill="currentColor"
+                          stroke-width="0"
+                          viewBox="0 0 512 512"
+                          class="sidebar__inner-right-top-main-item-box-img"
+                          height="1em"
+                          width="1em"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm306.7 69.1L162.4 380.6c-19.4 7.5-38.5-11.6-31-31l55.5-144.3c3.3-8.5 9.9-15.1 18.4-18.4l144.3-55.5c19.4-7.5 38.5 11.6 31 31L325.1 306.7c-3.2 8.5-9.9 15.1-18.4 18.4zM288 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"
+                          ></path>
+                        </svg>
+                        <h2
+                          class="sidebar__inner-right-top-main-item-box-title sidebar__inner-right-top-main-item-box-title2"
+                        >
+                          1002hPa
+                        </h2>
+                      </div>
+                    </li>
+                    <li class="sidebar__inner-right-top-main-item">
+                      <h3 class="sidebar__inner-right-top-main-item-heading">
+                        Visibility
+                      </h3>
+                      <div class="sidebar__inner-right-top-main-item-box">
+                        <svg
+                          stroke="currentColor"
+                          fill="currentColor"
+                          stroke-width="0"
+                          viewBox="0 0 24 24"
+                          class="sidebar__inner-right-top-main-item-box-img"
+                          height="1em"
+                          width="1em"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path fill="none" d="M0 0h24v24H0V0z"></path>
+                          <path
+                            d="M12 6a9.77 9.77 0 0 1 8.82 5.5C19.17 14.87 15.79 17 12 17s-7.17-2.13-8.82-5.5A9.77 9.77 0 0 1 12 6m0-2C7 4 2.73 7.11 1 11.5 2.73 15.89 7 19 12 19s9.27-3.11 11-7.5C21.27 7.11 17 4 12 4zm0 5a2.5 2.5 0 0 1 0 5 2.5 2.5 0 0 1 0-5m0-2c-2.48 0-4.5 2.02-4.5 4.5S9.52 16 12 16s4.5-2.02 4.5-4.5S14.48 7 12 7z"
+                          ></path>
+                        </svg>
+                        <h2
+                          class="sidebar__inner-right-top-main-item-box-title sidebar__inner-right-top-main-item-box-title3"
+                        >
+                          10km
+                        </h2>
+                      </div>
+                    </li>
+                    <li class="sidebar__inner-right-top-main-item">
+                      <h3 class="sidebar__inner-right-top-main-item-heading">
+                        Wind Speed
+                      </h3>
+                      <div class="sidebar__inner-right-top-main-item-box">
+                        <svg
+                          stroke="currentColor"
+                          fill="none"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="sidebar__inner-right-top-main-item-box-img"
+                          height="1em"
+                          width="1em"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M21 3l-6.5 18a.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a.55 .55 0 0 1 0 -1l18 -6.5"
+                          ></path>
+                        </svg>
+                        <h2
+                          class="sidebar__inner-right-top-main-item-box-title sidebar__inner-right-top-main-item-box-title4"
+                        >
+                          3.57m/s
+                        </h2>
+                      </div>
+                    </li>
+                    <li class="sidebar__inner-right-top-main-item">
+                      <h3 class="sidebar__inner-right-top-main-item-heading">
+                        Feels Like
+                      </h3>
+                      <div class="sidebar__inner-right-top-main-item-box">
+                        <svg
+                          stroke="currentColor"
+                          fill="currentColor"
+                          stroke-width="0"
+                          viewBox="0 0 256 256"
+                          class="sidebar__inner-right-top-main-item-box-img"
+                          height="1em"
+                          width="1em"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M152,138V48a32,32,0,0,0-64,0v90a56,56,0,1,0,64,0Zm-32,70a24,24,0,1,1,24-24A24,24,0,0,1,120,208Z"
+                            opacity="0.2"
+                          ></path>
+                          <path
+                            d="M212,56a28,28,0,1,0,28,28A28,28,0,0,0,212,56Zm0,40a12,12,0,1,1,12-12A12,12,0,0,1,212,96Zm-84,57V88a8,8,0,0,0-16,0v65a32,32,0,1,0,16,0Zm-8,47a16,16,0,1,1,16-16A16,16,0,0,1,120,200Zm40-66V48a40,40,0,0,0-80,0v86a64,64,0,1,0,80,0Zm-40,98a48,48,0,0,1-27.42-87.4A8,8,0,0,0,96,138V48a24,24,0,0,1,48,0v90a8,8,0,0,0,3.42,6.56A48,48,0,0,1,120,232Z"
+                          ></path>
+                        </svg>
+                        <h2
+                          class="sidebar__inner-right-top-main-item-box-title sidebar__inner-right-top-main-item-box-title5"
+                        >
+                          33.09°C
+                        </h2>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="sidebar__inner-right-top-weather">
+                  <h2 class="sidebar__inner-right-top-weather-heading">
+                    Today at
+                  </h2>
+                  <ul class="sidebar__inner-right-top-weather-list">
+                    <li class="sidebar__inner-right-top-weather-item">
+                      <span class="sidebar__inner-right-top-weather-item-span"
+                        >5 Jun</span
+                      >
+                      <h3 class="sidebar__inner-right-top-weather-item-head">
+                        8 PM
+                      </h3>
+                      <img
+                        src="https://openweathermap.org/img/wn/04n@2x.png"
+                        class="sidebar__inner-right-top-weather-item-img"
+                      />
+                      <h3 class="sidebar__inner-right-top-weather-item-title">
+                        34.25°C
+                      </h3>
+                    </li>
+                    <li class="sidebar__inner-right-top-weather-item">
+                      <span class="sidebar__inner-right-top-weather-item-span"
+                        >5 Jun</span
+                      >
+                      <h3 class="sidebar__inner-right-top-weather-item-head">
+                        11 PM
+                      </h3>
+                      <img
+                        src="https://openweathermap.org/img/wn/04n@2x.png"
+                        class="sidebar__inner-right-top-weather-item-img"
+                      />
+                      <h3 class="sidebar__inner-right-top-weather-item-title">
+                        32.95°C
+                      </h3>
+                    </li>
+                    <li class="sidebar__inner-right-top-weather-item">
+                      <span class="sidebar__inner-right-top-weather-item-span"
+                        >6 Jun</span
+                      >
+                      <h3 class="sidebar__inner-right-top-weather-item-head">
+                        2 AM
+                      </h3>
+                      <img
+                        src="https://openweathermap.org/img/wn/04n@2x.png"
+                        class="sidebar__inner-right-top-weather-item-img"
+                      />
+                      <h3 class="sidebar__inner-right-top-weather-item-title">
+                        29.4°C
+                      </h3>
+                    </li>
+                    <li class="sidebar__inner-right-top-weather-item">
+                      <span class="sidebar__inner-right-top-weather-item-span"
+                        >6 Jun</span
+                      >
+                      <h3 class="sidebar__inner-right-top-weather-item-head">
+                        5 AM
+                      </h3>
+                      <img
+                        src="https://openweathermap.org/img/wn/04d@2x.png"
+                        class="sidebar__inner-right-top-weather-item-img"
+                      />
+                      <h3 class="sidebar__inner-right-top-weather-item-title">
+                        25.89°C
+                      </h3>
+                    </li>
+                    <li class="sidebar__inner-right-top-weather-item">
+                      <span class="sidebar__inner-right-top-weather-item-span"
+                        >6 Jun</span
+                      >
+                      <h3 class="sidebar__inner-right-top-weather-item-head">
+                        8 AM
+                      </h3>
+                      <img
+                        src="https://openweathermap.org/img/wn/04d@2x.png"
+                        class="sidebar__inner-right-top-weather-item-img"
+                      />
+                      <h3 class="sidebar__inner-right-top-weather-item-title">
+                        28.47°C
+                      </h3>
+                    </li>
+                    <li class="sidebar__inner-right-top-weather-item">
+                      <span class="sidebar__inner-right-top-weather-item-span"
+                        >6 Jun</span
+                      >
+                      <h3 class="sidebar__inner-right-top-weather-item-head">
+                        11 AM
+                      </h3>
+                      <img
+                        src="https://openweathermap.org/img/wn/04d@2x.png"
+                        class="sidebar__inner-right-top-weather-item-img"
+                      />
+                      <h3 class="sidebar__inner-right-top-weather-item-title">
+                        31.21°C
+                      </h3>
+                    </li>
+                    <li class="sidebar__inner-right-top-weather-item">
+                      <span class="sidebar__inner-right-top-weather-item-span"
+                        >6 Jun</span
+                      >
+                      <h3 class="sidebar__inner-right-top-weather-item-head">
+                        2 PM
+                      </h3>
+                      <img
+                        src="https://openweathermap.org/img/wn/04d@2x.png"
+                        class="sidebar__inner-right-top-weather-item-img"
+                      />
+                      <h3 class="sidebar__inner-right-top-weather-item-title">
+                        31.4°C
+                      </h3>
+                    </li>
+                    <li class="sidebar__inner-right-top-weather-item">
+                      <span class="sidebar__inner-right-top-weather-item-span"
+                        >6 Jun</span
+                      >
+                      <h3 class="sidebar__inner-right-top-weather-item-head">
+                        5 PM
+                      </h3>
+                      <img
+                        src="https://openweathermap.org/img/wn/04d@2x.png"
+                        class="sidebar__inner-right-top-weather-item-img"
+                      />
+                      <h3 class="sidebar__inner-right-top-weather-item-title">
+                        32.44°C
+                      </h3>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

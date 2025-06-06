@@ -12,14 +12,14 @@ let api = "a465faeababf539d725cd64ed8bbb202";
 //     .catch((error) => console.error("Error fetching data:", error))
 // );
 //log sidebar list
-// console.log(
-//   fetch(
-//     `https://api.openweathermap.org/data/2.5/forecast?q=tashkent&appid=${api}&units=metric`
-//   )
-//     .then((res) => res.json())
-//     .then((data) => console.log(data))
-//     .catch((error) => console.error("Error fetching data:", error))
-// );
+console.log(
+  fetch(
+    `https://api.openweathermap.org/data/2.5/forecast?q=tashkent&appid=${api}&units=metric`
+  )
+    .then((res) => res.json())
+    .then((data) => console.log(data))
+    .catch((error) => console.error("Error fetching data:", error))
+);
 
 // first show
 fetch(
@@ -161,7 +161,7 @@ function renderdata2(data) {
   return result2;
 }
 
-//render main
+//render main and today`s highlights
 function render(obj) {
   // 1
   document.querySelector(".sidebar-top__inner-item-text").innerHTML =
@@ -306,130 +306,130 @@ function render(obj) {
     ".sidebar__inner-right-top-main-item-box-title5"
   ).innerHTML = obj.main.feels_like + "°C";
   //7
-  document.querySelector(".sidebar__inner-right-top-weather-list").innerHTML = `
-      <li class="sidebar__inner-right-top-weather-item">
-                      <span class="sidebar__inner-right-top-weather-item-span"
-                        >5 Jun</span
-                      >
-                      <h3 class="sidebar__inner-right-top-weather-item-head">
-                        8 PM
-                      </h3>
-                      <img
-                        src="https://openweathermap.org/img/wn/04n@2x.png"
-                        class="sidebar__inner-right-top-weather-item-img"
-                      />
-                      <h3 class="sidebar__inner-right-top-weather-item-title">
-                        34.25°C
-                      </h3>
-                    </li>
-                    <li class="sidebar__inner-right-top-weather-item">
-                      <span class="sidebar__inner-right-top-weather-item-span"
-                        >5 Jun</span
-                      >
-                      <h3 class="sidebar__inner-right-top-weather-item-head">
-                        11 PM
-                      </h3>
-                      <img
-                        src="https://openweathermap.org/img/wn/04n@2x.png"
-                        class="sidebar__inner-right-top-weather-item-img"
-                      />
-                      <h3 class="sidebar__inner-right-top-weather-item-title">
-                        32.95°C
-                      </h3>
-                    </li>
-                    <li class="sidebar__inner-right-top-weather-item">
-                      <span class="sidebar__inner-right-top-weather-item-span"
-                        >6 Jun</span
-                      >
-                      <h3 class="sidebar__inner-right-top-weather-item-head">
-                        2 AM
-                      </h3>
-                      <img
-                        src="https://openweathermap.org/img/wn/04n@2x.png"
-                        class="sidebar__inner-right-top-weather-item-img"
-                      />
-                      <h3 class="sidebar__inner-right-top-weather-item-title">
-                        29.4°C
-                      </h3>
-                    </li>
-                    <li class="sidebar__inner-right-top-weather-item">
-                      <span class="sidebar__inner-right-top-weather-item-span"
-                        >6 Jun</span
-                      >
-                      <h3 class="sidebar__inner-right-top-weather-item-head">
-                        5 AM
-                      </h3>
-                      <img
-                        src="https://openweathermap.org/img/wn/04d@2x.png"
-                        class="sidebar__inner-right-top-weather-item-img"
-                      />
-                      <h3 class="sidebar__inner-right-top-weather-item-title">
-                        25.89°C
-                      </h3>
-                    </li>
-                    <li class="sidebar__inner-right-top-weather-item">
-                      <span class="sidebar__inner-right-top-weather-item-span"
-                        >6 Jun</span
-                      >
-                      <h3 class="sidebar__inner-right-top-weather-item-head">
-                        8 AM
-                      </h3>
-                      <img
-                        src="https://openweathermap.org/img/wn/04d@2x.png"
-                        class="sidebar__inner-right-top-weather-item-img"
-                      />
-                      <h3 class="sidebar__inner-right-top-weather-item-title">
-                        28.47°C
-                      </h3>
-                    </li>
-                    <li class="sidebar__inner-right-top-weather-item">
-                      <span class="sidebar__inner-right-top-weather-item-span"
-                        >6 Jun</span
-                      >
-                      <h3 class="sidebar__inner-right-top-weather-item-head">
-                        11 AM
-                      </h3>
-                      <img
-                        src="https://openweathermap.org/img/wn/04d@2x.png"
-                        class="sidebar__inner-right-top-weather-item-img"
-                      />
-                      <h3 class="sidebar__inner-right-top-weather-item-title">
-                        31.21°C
-                      </h3>
-                    </li>
-                    <li class="sidebar__inner-right-top-weather-item">
-                      <span class="sidebar__inner-right-top-weather-item-span"
-                        >6 Jun</span
-                      >
-                      <h3 class="sidebar__inner-right-top-weather-item-head">
-                        2 PM
-                      </h3>
-                      <img
-                        src="https://openweathermap.org/img/wn/04d@2x.png"
-                        class="sidebar__inner-right-top-weather-item-img"
-                      />
-                      <h3 class="sidebar__inner-right-top-weather-item-title">
-                        31.4°C
-                      </h3>
-                    </li>
-                    <li class="sidebar__inner-right-top-weather-item">
-                      <span class="sidebar__inner-right-top-weather-item-span"
-                        >6 Jun</span
-                      >
-                      <h3 class="sidebar__inner-right-top-weather-item-head">
-                        5 PM
-                      </h3>
-                      <img
-                        src="https://openweathermap.org/img/wn/04d@2x.png"
-                        class="sidebar__inner-right-top-weather-item-img"
-                      />
-                      <h3 class="sidebar__inner-right-top-weather-item-title">
-                        32.44°C
-                      </h3>
-                    </li>
-  `;
+  // document.querySelector(".sidebar__inner-right-top-weather-list").innerHTML = `
+  //     <li class="sidebar__inner-right-top-weather-item">
+  //                     <span class="sidebar__inner-right-top-weather-item-span"
+  //                       >5 Jun</span
+  //                     >
+  //                     <h3 class="sidebar__inner-right-top-weather-item-head">
+  //                       8 PM
+  //                     </h3>
+  //                     <img
+  //                       src="https://openweathermap.org/img/wn/04n@2x.png"
+  //                       class="sidebar__inner-right-top-weather-item-img"
+  //                     />
+  //                     <h3 class="sidebar__inner-right-top-weather-item-title">
+  //                       34.25°C
+  //                     </h3>
+  //                   </li>
+  //                   <li class="sidebar__inner-right-top-weather-item">
+  //                     <span class="sidebar__inner-right-top-weather-item-span"
+  //                       >5 Jun</span
+  //                     >
+  //                     <h3 class="sidebar__inner-right-top-weather-item-head">
+  //                       11 PM
+  //                     </h3>
+  //                     <img
+  //                       src="https://openweathermap.org/img/wn/04n@2x.png"
+  //                       class="sidebar__inner-right-top-weather-item-img"
+  //                     />
+  //                     <h3 class="sidebar__inner-right-top-weather-item-title">
+  //                       32.95°C
+  //                     </h3>
+  //                   </li>
+  //                   <li class="sidebar__inner-right-top-weather-item">
+  //                     <span class="sidebar__inner-right-top-weather-item-span"
+  //                       >6 Jun</span
+  //                     >
+  //                     <h3 class="sidebar__inner-right-top-weather-item-head">
+  //                       2 AM
+  //                     </h3>
+  //                     <img
+  //                       src="https://openweathermap.org/img/wn/04n@2x.png"
+  //                       class="sidebar__inner-right-top-weather-item-img"
+  //                     />
+  //                     <h3 class="sidebar__inner-right-top-weather-item-title">
+  //                       29.4°C
+  //                     </h3>
+  //                   </li>
+  //                   <li class="sidebar__inner-right-top-weather-item">
+  //                     <span class="sidebar__inner-right-top-weather-item-span"
+  //                       >6 Jun</span
+  //                     >
+  //                     <h3 class="sidebar__inner-right-top-weather-item-head">
+  //                       5 AM
+  //                     </h3>
+  //                     <img
+  //                       src="https://openweathermap.org/img/wn/04d@2x.png"
+  //                       class="sidebar__inner-right-top-weather-item-img"
+  //                     />
+  //                     <h3 class="sidebar__inner-right-top-weather-item-title">
+  //                       25.89°C
+  //                     </h3>
+  //                   </li>
+  //                   <li class="sidebar__inner-right-top-weather-item">
+  //                     <span class="sidebar__inner-right-top-weather-item-span"
+  //                       >6 Jun</span
+  //                     >
+  //                     <h3 class="sidebar__inner-right-top-weather-item-head">
+  //                       8 AM
+  //                     </h3>
+  //                     <img
+  //                       src="https://openweathermap.org/img/wn/04d@2x.png"
+  //                       class="sidebar__inner-right-top-weather-item-img"
+  //                     />
+  //                     <h3 class="sidebar__inner-right-top-weather-item-title">
+  //                       28.47°C
+  //                     </h3>
+  //                   </li>
+  //                   <li class="sidebar__inner-right-top-weather-item">
+  //                     <span class="sidebar__inner-right-top-weather-item-span"
+  //                       >6 Jun</span
+  //                     >
+  //                     <h3 class="sidebar__inner-right-top-weather-item-head">
+  //                       11 AM
+  //                     </h3>
+  //                     <img
+  //                       src="https://openweathermap.org/img/wn/04d@2x.png"
+  //                       class="sidebar__inner-right-top-weather-item-img"
+  //                     />
+  //                     <h3 class="sidebar__inner-right-top-weather-item-title">
+  //                       31.21°C
+  //                     </h3>
+  //                   </li>
+  //                   <li class="sidebar__inner-right-top-weather-item">
+  //                     <span class="sidebar__inner-right-top-weather-item-span"
+  //                       >6 Jun</span
+  //                     >
+  //                     <h3 class="sidebar__inner-right-top-weather-item-head">
+  //                       2 PM
+  //                     </h3>
+  //                     <img
+  //                       src="https://openweathermap.org/img/wn/04d@2x.png"
+  //                       class="sidebar__inner-right-top-weather-item-img"
+  //                     />
+  //                     <h3 class="sidebar__inner-right-top-weather-item-title">
+  //                       31.4°C
+  //                     </h3>
+  //                   </li>
+  //                   <li class="sidebar__inner-right-top-weather-item">
+  //                     <span class="sidebar__inner-right-top-weather-item-span"
+  //                       >6 Jun</span
+  //                     >
+  //                     <h3 class="sidebar__inner-right-top-weather-item-head">
+  //                       5 PM
+  //                     </h3>
+  //                     <img
+  //                       src="https://openweathermap.org/img/wn/04d@2x.png"
+  //                       class="sidebar__inner-right-top-weather-item-img"
+  //                     />
+  //                     <h3 class="sidebar__inner-right-top-weather-item-title">
+  //                       32.44°C
+  //                     </h3>
+  //                   </li>
+  // `;
 }
-//render other main
+//render today at and 5 days
 function renderlist(obj) {
   //8
   document.querySelector(".sidebar-bottom__inner-list").innerHTML = `
@@ -462,7 +462,7 @@ function renderlist(obj) {
         }</h3>
         <p class="sidebar-bottom__inner-item-text">${renderdata(
           obj.list[15].dt
-        )}}</p>
+        )}</p>
         <p class="sidebar-bottom__inner-item-text">${renderdata2(
           obj.list[15].dt
         )}</p>
@@ -479,7 +479,7 @@ function renderlist(obj) {
         }</h3>
         <p class="sidebar-bottom__inner-item-text">${renderdata(
           obj.list[23].dt
-        )}}</p>
+        )}</p>
         <p class="sidebar-bottom__inner-item-text">${renderdata2(
           obj.list[23].dt
         )}</p>
@@ -496,7 +496,7 @@ function renderlist(obj) {
         }</h3>
         <p class="sidebar-bottom__inner-item-text">${renderdata(
           obj.list[31].dt
-        )}}</p>
+        )}</p>
         <p class="sidebar-bottom__inner-item-text">${renderdata2(
           obj.list[31].dt
         )}</p>
@@ -505,17 +505,17 @@ function renderlist(obj) {
           <img
             class="sidebar-bottom__inner-item-img"
             src="https://openweathermap.org/img/wn/${
-              obj.list[38].weather[0].icon
+              obj.list[39].weather[0].icon
             }@2x.png"
           />
         <h3 class="sidebar-bottom__inner-item-heading">${
-          obj.list[4].main.temp + "°C"
+          obj.list[39].main.temp + "°C"
         }</h3>
         <p class="sidebar-bottom__inner-item-text">${renderdata(
-          obj.list[38].dt
-        )}}</p>
+          obj.list[39].dt
+        )}</p>
         <p class="sidebar-bottom__inner-item-text">${renderdata2(
-          obj.list[38].dt
+          obj.list[39].dt
         )}</p>
       </li>
        

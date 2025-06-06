@@ -21,6 +21,9 @@ body {
 
 .header {
   padding: 24px 0;
+  position: fixed;
+  width: 100%;
+  background-color: #212529;
 }
 .header__inner {
   display: flex;
@@ -102,7 +105,9 @@ body {
 
 .sidebar {
   color: #fff;
+  padding-top: 108px;
   background-color: #212528;
+  padding-bottom: 100px;
 }
 
 .sidebar__inner {
@@ -114,6 +119,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  align-items: flex-start;
 }
 
 .sidebar-top__inner {
@@ -154,6 +160,7 @@ body {
 }
 
 .sidebar-top__inner-location-list {
+  list-style-type: none;
   display: flex;
   margin-top: 15px;
   gap: 5px;
@@ -185,6 +192,10 @@ body {
   margin-left: 10px;
 }
 
+.sidebar-bottom__inner-list {
+  list-style-type: none;
+}
+
 .sidebar-bottom__inner-item {
   display: flex;
   align-items: center;
@@ -203,6 +214,7 @@ body {
 .sidebar-bottom__inner-item-text {
   color: #5d6265;
 }
+
 .sidebar__inner-right-top {
   display: flex;
   justify-content: center;
@@ -223,9 +235,10 @@ body {
 
 .sidebar__inner-right-top-quality {
   max-width: 380px;
+  min-height: 267px;
   width: 100%;
   background-color: #282c2d;
-  padding: 20px 15px 80px 15px;
+  padding: 20px 15px;
   border-radius: 20px;
 }
 
@@ -261,6 +274,7 @@ body {
 }
 
 .sidebar__inner-right-top-air-list {
+  list-style-type: none;
   display: flex;
   flex-wrap: wrap;
   text-align: center;
@@ -286,13 +300,13 @@ body {
 }
 
 .sidebar__inner-right-top-sun {
-  max-width: 500px;
+  max-width: 470px;
   width: 100%;
   background-color: #282c2d;
   padding-top: 20px;
-  padding-left: 25px;
+  padding-left: 20px;
   padding-bottom: 150px;
-  padding-right: 25px;
+  padding-right: 20px;
   border-radius: 20px;
 }
 
@@ -303,10 +317,11 @@ body {
 }
 
 .sidebar__inner-right-top-sun-list {
+  list-style-type: none;
   display: flex;
   align-items: center;
   margin-top: 15px;
-  gap: 30px;
+  gap: 20px;
 }
 
 .sidebar__inner-right-top-sun-item {
@@ -342,6 +357,7 @@ body {
 }
 
 .sidebar__inner-right-top-main-list {
+  list-style-type: none;
   display: flex;
   max-width: 870px;
   width: 100%;
@@ -395,6 +411,7 @@ body {
 }
 
 .sidebar__inner-right-top-weather-list {
+  list-style-type: none;
   display: flex;
   max-width: 100%;
   width: 100%;
@@ -437,6 +454,18 @@ body {
   }
 }
 
+@media only screen and (max-width: 650px) {
+  .sidebar {
+    padding-top: 170px;
+  }
+}
+
+@media only screen and (max-width: 511px) {
+  .sidebar {
+    padding-top: 255px;
+  }
+}
+
 @media only screen and (max-width: 635px) {
   .sidebar__inner {
     display: flex;
@@ -460,7 +489,7 @@ body {
   }
 
   .sidebar__inner-right-top-sun-list {
-    flex-direction: row;
+    flex-direction: row !important;
     justify-content: center;
   }
 
@@ -469,7 +498,7 @@ body {
   }
 
   .sidebar__inner-right-top-sun {
-    height: 150px;
+    height: 150px !important;
   }
 
   .sidebar__inner-right-top-weather-item-span {
@@ -479,11 +508,11 @@ body {
 
 @media only screen and (max-width: 466px) {
   .sidebar__inner-right-top-sun-list {
-    flex-direction: column;
+    flex-direction: column !important;
   }
 
   .sidebar__inner-right-top-sun {
-    height: 230px;
+    height: 230px !important;
   }
 
   .sidebar__inner-right-top-weather-item {
@@ -491,7 +520,7 @@ body {
     max-width: 100%;
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 24px !important;
   }
 
   .sidebar__inner-right-top-sun-heading {
@@ -503,7 +532,7 @@ body {
   }
 
   .sidebar__inner-right-top-weather-item-head {
-    font-size: 18px;
+    font-size: 18px !important;
   }
 }
 
@@ -513,12 +542,12 @@ body {
     max-width: 100%;
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 12px !important;
   }
 
   .sidebar__inner-right-top-weather-item-img {
-    width: 40px;
-    height: 40px;
+    width: 40px !important;
+    height: 40px !important;
   }
 }
 
@@ -558,7 +587,7 @@ body {
 
 @media only screen and (max-width: 375px) {
   .sidebar__inner-right-top-weather-item {
-    gap: 18px;
+    gap: 18px !important;
   }
 
   .sidebar__inner-right-top-weather-item-head,
@@ -574,7 +603,7 @@ body {
 
 @media only screen and (max-width: 312px) {
   .sidebar__inner-right-top-weather-item {
-    gap: 14px;
+    gap: 14px !important;
   }
 }
 
@@ -589,7 +618,7 @@ body {
 
 @media only screen and (max-width: 350px) {
   .sidebar-bottom__inner {
-    min-width: 200px;
+    min-width: 200px !important;
   }
 
   .sidebar-bottom__inner-item-text {
@@ -601,8 +630,8 @@ body {
   }
 
   .sidebar-bottom__inner-item-img {
-    width: 40px;
-    height: 40px;
+    width: 40px !important;
+    height: 40px !important;
   }
 
   .sidebar-bottom__inner-item-heading {

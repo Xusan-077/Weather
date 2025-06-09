@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-  max-width: 1450px;
+  max-width: 1300px;
   padding: 0 20px;
   margin: 0 auto;
 }
@@ -44,6 +44,9 @@ body {
   background-color: #282c2d;
   border: none;
   border-radius: 15px;
+  &:focus {
+    color: #fff;
+  }
 }
 .header__search-btn {
   display: flex;
@@ -179,8 +182,8 @@ body {
 }
 
 .sidebar-bottom__inner {
-  max-width: 350px;
-  width: 100%;
+  width: 320px;
+  /* width: 100%; */
   padding: 15px;
   border-radius: 20px;
   background-color: #282c2d;
@@ -424,6 +427,7 @@ body {
   text-align: center;
   background-color: #282c2d;
   border-radius: 10px;
+  width: 120px;
 }
 
 .sidebar__inner-right-top-weather-item-span {
@@ -712,4 +716,29 @@ body {
   .sidebar-bottom__inner {
     min-width: 315px;
   }
+}
+
+.good {
+  background-color: green;
+  color: #fff;
+}
+
+.fair {
+  background-color: #7fff00;
+  color: #000;
+}
+
+.mode {
+  background-color: #ff8c00;
+  color: #000;
+}
+
+.poor {
+  background-color: tomato;
+  color: #000;
+}
+
+.very {
+  background-color: #ac321c;
+  color: #000;
 }
